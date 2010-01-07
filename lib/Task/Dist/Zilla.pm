@@ -24,8 +24,133 @@ in one go.
 
 =pkgroup Plugins
 
+=pkg Dist::Zilla::Plugin::AllFiles
+
+=pkg Dist::Zilla::Plugin::AutoPrereq
+
+=pkg Dist::Zilla::Plugin::AutoVersion
+
+=pkg Dist::Zilla::Plugin::AutoVersion::Relative
+
+=pkg Dist::Zilla::Plugin::BumpVersion
+
+=pkg Dist::Zilla::Plugin::CheckChangeLog
+
+=pkg Dist::Zilla::Plugin::CompileTests
+
+=pkg Dist::Zilla::Plugin::CopyTo
+
+=pkg Dist::Zilla::Plugin::CriticTests
+
+=pkg Dist::Zilla::Plugin::ExtraTests
+
+=pkg Dist::Zilla::Plugin::FakeRelease
+
+=pkg Dist::Zilla::Plugin::Git
+
+=pkg Dist::Zilla::Plugin::Git::Check
+
+=pkg Dist::Zilla::Plugin::Git::Commit
+
+=pkg Dist::Zilla::Plugin::Git::Push
+
+=pkg Dist::Zilla::Plugin::Git::Tag
+
+=pkg Dist::Zilla::Plugin::InlineFiles
+
+=pkg Dist::Zilla::Plugin::InstallDirs
+
+=pkg Dist::Zilla::Plugin::License
+
+=pkg Dist::Zilla::Plugin::MakeMaker
+
+=pkg Dist::Zilla::Plugin::MakeMaker::SkipInstall
+
+=pkg Dist::Zilla::Plugin::MakeMaker::Test
+
+=pkg Dist::Zilla::Plugin::Manifest
+
+=pkg Dist::Zilla::Plugin::ManifestSkip
+
+=pkg Dist::Zilla::Plugin::MatchManifest
+
+=pkg Dist::Zilla::Plugin::MetaJSON
+
+=pkg Dist::Zilla::Plugin::MetaProvides
+
+=pkg Dist::Zilla::Plugin::MetaProvides::Class
+
+=pkg Dist::Zilla::Plugin::MetaProvides::FromFile
+
+=pkg Dist::Zilla::Plugin::MetaProvides::Package
+
+=pkg Dist::Zilla::Plugin::MetaRecommends
+
+=pkg Dist::Zilla::Plugin::MetaResources
+
+=pkg Dist::Zilla::Plugin::MetaTests
+
+=pkg Dist::Zilla::Plugin::MetaYAML
+
+=pkg Dist::Zilla::Plugin::ModuleBuild
+
+=pkg Dist::Zilla::Plugin::ModuleBuild::Test
+
+=pkg Dist::Zilla::Plugin::ModuleInstall
+
+=pkg Dist::Zilla::Plugin::NextRelease
+
+=pkg Dist::Zilla::Plugin::PerlTidy
+
+=pkg Dist::Zilla::Plugin::PkgVersion
+
+=pkg Dist::Zilla::Plugin::PodLoom
+
+=pkg Dist::Zilla::Plugin::PodPurler
+
+=pkg Dist::Zilla::Plugin::PodTests
+
+=pkg Dist::Zilla::Plugin::PodVersion
+
+=pkg Dist::Zilla::Plugin::PodWeaver
+
+=pkg Dist::Zilla::Plugin::Prepender
+
+=pkg Dist::Zilla::Plugin::Prereq
+
+=pkg Dist::Zilla::Plugin::PruneCruft
+
+=pkg Dist::Zilla::Plugin::PruneFiles
+
+=pkg Dist::Zilla::Plugin::Readme
+
+=pkg Dist::Zilla::Plugin::ReadmeFromPod
+
+=pkg Dist::Zilla::Plugin::Repository
+
+=pkg Dist::Zilla::Plugin::TaskWeaver
+
+=pkg Dist::Zilla::Plugin::TemplateCJM
+
+=pkg Dist::Zilla::Plugin::UploadToCPAN
+
+=pkg Dist::Zilla::Plugin::VersionFromModule
+
 =pkgroup Plugin bundles
 
+=pkg Dist::Zilla::PluginBundle::CJM
+
+=pkg Dist::Zilla::PluginBundle::Classic
+
+=pkg Dist::Zilla::PluginBundle::FAYLAND
+
+=pkg Dist::Zilla::PluginBundle::Filter
+
+=pkg Dist::Zilla::PluginBundle::Git
+
+=pkg Dist::Zilla::PluginBundle::JQUELIN
+
+=pkg Dist::Zilla::PluginBundle::RJBS
 
 =head1 SEE ALSO
 
