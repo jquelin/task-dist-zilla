@@ -8,10 +8,6 @@ use List::MoreUtils qw{ firstidx };
 
 # fetch available plugins/bundles
 my $modlist = '/home/cpan/modules/02packages.details.txt.gz';
-my @bundles =
-    map { "=pkg $_\n" }
-    map { (split /\s+/, $_)[0] }
-    qx{ zgrep Dist::Zilla::PluginBundle:: $modlist };
 
 # update the module
 my $task = 'lib/Task/Dist/Zilla.pm';
@@ -27,5 +23,15 @@ my @plugins =
 my $p1 = firstidx { /^=pkgroup Plugins$/ } @lines;
 my $p2 = firstidx { /^=pkgroup Plugin bundles$/ } @lines;
 splice @lines, $p1+2, $p2-$p1-2, @plugins;
+
+# update plugins
+my @bundles =
+    map { "=pkg $_\n" }
+    map { (split /\s+/, $_)[0] }
+    qx{ zgrep Dist::Zilla::PluginBundle:: $modlist };
+my $b1 = firstidx { /^=pkgroup Plugin bundles$/ } @lines;
+my $b2 = firstidx { /^=head1 SEE ALSO$/ } @lines;
+splice @lines, $b1+2, $b2-$b1-2, @bundles;
+
 
 untie @lines;
