@@ -26,6 +26,8 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::AllFiles
 
+=pkg Dist::Zilla::Plugin::ArchiveRelease
+
 =pkg Dist::Zilla::Plugin::AutoPrereq
 
 =pkg Dist::Zilla::Plugin::AutoVersion
@@ -56,6 +58,8 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::Git::Tag
 
+=pkg Dist::Zilla::Plugin::GitVersionCheckCJM
+
 =pkg Dist::Zilla::Plugin::InlineFiles
 
 =pkg Dist::Zilla::Plugin::InstallDirs
@@ -75,6 +79,8 @@ in one go.
 =pkg Dist::Zilla::Plugin::MatchManifest
 
 =pkg Dist::Zilla::Plugin::MetaJSON
+
+=pkg Dist::Zilla::Plugin::MetaNoIndex
 
 =pkg Dist::Zilla::Plugin::MetaProvides
 
@@ -127,6 +133,8 @@ in one go.
 =pkg Dist::Zilla::Plugin::ReadmeFromPod
 
 =pkg Dist::Zilla::Plugin::Repository
+
+=pkg Dist::Zilla::Plugin::Signature
 
 =pkg Dist::Zilla::Plugin::TaskWeaver
 
