@@ -2,6 +2,8 @@ Changelog for Task-Dist-Zilla
 
 {{$NEXT}}
 
+1.100680  2010-03-09 17:11:58 Europe/Paris
+
 1.100080  2010-01-08 11:16:31 Europe/Paris
  - using new pluginbundle param: weaver=task (transparent for end-users)
 
