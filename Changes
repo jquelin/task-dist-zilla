@@ -2,7 +2,12 @@ Changelog for Task-Dist-Zilla
 
 {{$NEXT}}
 
+1.100690  2010-03-10 19:56:51 Europe/Paris
+ - removing dzp:modulebuild:test and dzp:makemaker:test which are
+   remants from old dzil release
+
 1.100680  2010-03-09 17:11:58 Europe/Paris
+ - shiny new dzil plugins available
 
 1.100080  2010-01-08 11:16:31 Europe/Paris
  - using new pluginbundle param: weaver=task (transparent for end-users)
