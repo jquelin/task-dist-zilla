@@ -70,8 +70,6 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::MakeMaker::SkipInstall
 
-=pkg Dist::Zilla::Plugin::MakeMaker::Test
-
 =pkg Dist::Zilla::Plugin::Manifest
 
 =pkg Dist::Zilla::Plugin::ManifestSkip
@@ -99,8 +97,6 @@ in one go.
 =pkg Dist::Zilla::Plugin::MetaYAML
 
 =pkg Dist::Zilla::Plugin::ModuleBuild
-
-=pkg Dist::Zilla::Plugin::ModuleBuild::Test
 
 =pkg Dist::Zilla::Plugin::ModuleInstall
 
