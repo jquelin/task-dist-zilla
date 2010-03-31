@@ -2,6 +2,9 @@ Changelog for Task-Dist-Zilla
 
 {{$NEXT}}
 
+1.100900  2010-03-31 16:59:57 Europe/Paris
+ - shiny new dzil plugins available
+
 1.100690  2010-03-10 19:56:51 Europe/Paris
  - removing dzp:modulebuild:test and dzp:makemaker:test which are
    remants from old dzil release
