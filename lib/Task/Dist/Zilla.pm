@@ -24,8 +24,6 @@ in one go.
 
 =pkgroup Plugins
 
-=pkg Dist::Zilla::Plugin::AllFiles
-
 =pkg Dist::Zilla::Plugin::ArchiveRelease
 
 =pkg Dist::Zilla::Plugin::AutoPrereq
@@ -85,8 +83,6 @@ in one go.
 =pkg Dist::Zilla::Plugin::Homepage
 
 =pkg Dist::Zilla::Plugin::InlineFiles
-
-=pkg Dist::Zilla::Plugin::InstallDirs
 
 =pkg Dist::Zilla::Plugin::InstallGuide
 
@@ -151,8 +147,6 @@ in one go.
 =pkg Dist::Zilla::Plugin::PodSpellingTests
 
 =pkg Dist::Zilla::Plugin::PodSyntaxTests
-
-=pkg Dist::Zilla::Plugin::PodTests
 
 =pkg Dist::Zilla::Plugin::PodVersion
 
