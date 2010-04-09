@@ -24,6 +24,8 @@ in one go.
 
 =pkgroup Plugins
 
+=pkg Dist::Zilla::Plugin::ApacheTest
+
 =pkg Dist::Zilla::Plugin::ArchiveRelease
 
 =pkg Dist::Zilla::Plugin::AutoPrereq
@@ -88,7 +90,11 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::KwaliteeTests
 
+=pkg Dist::Zilla::Plugin::LatestPrereqs
+
 =pkg Dist::Zilla::Plugin::License
+
+=pkg Dist::Zilla::Plugin::LocaleMsgfmt
 
 =pkg Dist::Zilla::Plugin::MakeMaker
 
@@ -131,8 +137,6 @@ in one go.
 =pkg Dist::Zilla::Plugin::ModuleInstall
 
 =pkg Dist::Zilla::Plugin::NextRelease
-
-=pkg Dist::Zilla::Plugin::OverridableMakeMaker
 
 =pkg Dist::Zilla::Plugin::PerlTidy
 
@@ -180,6 +184,8 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::TemplateCJM
 
+=pkg Dist::Zilla::Plugin::TestRelease
+
 =pkg Dist::Zilla::Plugin::UnusedVarsTests
 
 =pkg Dist::Zilla::Plugin::UploadToCPAN
@@ -194,7 +200,7 @@ in one go.
 
 =pkgroup Plugin bundles
 
-=pkg Dist::Zilla::PluginBundle::AVAR
+=pkg Dist::Zilla::PluginBundle::Basic
 
 =pkg Dist::Zilla::PluginBundle::CJM
 
