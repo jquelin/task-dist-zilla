@@ -3,14 +3,24 @@ Changelog for Task-Dist-Zilla
 {{$NEXT}}
 
 1.100900  2010-03-31 16:59:57 Europe/Paris
- - shiny new dzil plugins available
+ - new core plugins: ConfirmRelease, ExecDir, FinderCode, GatherDir,
+     MetaConfig, PodCoverageTests, PodSyntaxTests, ShareDir
+ - obsolete core plugins: AllFiles, InstallDirs, PodTests
+ - new plugins: Bugtracker, BumpVersionFromGit, CheckChangesTests,
+     CheckExtraTests, DistManifestTests, FatPacker, HasVersionTests,
+     Homepage, InstallGuide, KwaliteeTests, MinimumVersionTests,
+     ModuleBuild::Custom, OverridableMakeMaker, PodSpellingTests,
+     PortabilityTests, ReadmeMarkdownFromPod, ReportVersions, SynopsisTests,
+     VersionFromPrev
+ - obsolete plugins: ReadmeFromPod
+ - new core bundle: FakeClassic
+ - new bundles: AVAR, MARCEL, PDONELAN
 
 1.100690  2010-03-10 19:56:51 Europe/Paris
- - removing dzp:modulebuild:test and dzp:makemaker:test which are
-   remants from old dzil release
+ - obsolete core plugins: MakeMaker::Test, ModuleBuild::Test
 
 1.100680  2010-03-09 17:11:58 Europe/Paris
- - shiny new dzil plugins available
+ - new plugins: ArchiveRelease, GitVersionCheckCJM, MetaNoIndex, Signature
 
 1.100080  2010-01-08 11:16:31 Europe/Paris
  - using new pluginbundle param: weaver=task (transparent for end-users)
