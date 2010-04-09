@@ -86,6 +86,8 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::InlineFiles
 
+=pkg Dist::Zilla::Plugin::InlineFilesMARCEL
+
 =pkg Dist::Zilla::Plugin::InstallGuide
 
 =pkg Dist::Zilla::Plugin::KwaliteeTests
@@ -97,6 +99,8 @@ in one go.
 =pkg Dist::Zilla::Plugin::LocaleMsgfmt
 
 =pkg Dist::Zilla::Plugin::MakeMaker
+
+=pkg Dist::Zilla::Plugin::MakeMaker::Awesome
 
 =pkg Dist::Zilla::Plugin::MakeMaker::SkipInstall
 
@@ -199,6 +203,8 @@ in one go.
 =pkg Dist::Zilla::Plugin::VersionFromPrev::Style::Classic
 
 =pkgroup Plugin bundles
+
+=pkg Dist::Zilla::PluginBundle::AVAR
 
 =pkg Dist::Zilla::PluginBundle::Basic
 
