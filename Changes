@@ -2,6 +2,13 @@ Changelog for Task-Dist-Zilla
 
 {{$NEXT}}
 
+1.100990  2010-04-09 14:16:02 Europe/Paris
+ - new core plugin: TestRelease
+ - new plugins: ApacheTests, LatestPrereqs, LocaleMsgfmt
+ - obsolete plugin: OverridableMakeMaker
+ - new core bundle: Basic
+ - obsolete bundle: AVAR
+
 1.100900  2010-03-31 16:59:57 Europe/Paris
  - new core plugins: ConfirmRelease, ExecDir, FinderCode, GatherDir,
      MetaConfig, PodCoverageTests, PodSyntaxTests, ShareDir
