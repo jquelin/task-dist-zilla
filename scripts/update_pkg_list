@@ -5,6 +5,11 @@ use warnings;
 
 use DB_File;
 use List::MoreUtils qw{ firstidx };
+use Regexp::Assemble;
+
+my @dzilv1 = qw{ AllFiles InstallDirs PodTests };
+my $remove = Regexp::Assemble->new;
+$remove->add("$_\$") for @dzilv1;
 
 # fetch available plugins/bundles
 my $modlist = '/home/cpan/modules/02packages.details.txt.gz';
@@ -17,8 +22,9 @@ tie @lines, 'DB_File', $task, O_RDWR|O_CREAT, 0666, $DB_RECNO
 
 # update plugins
 my @plugins =
-    map { "=pkg $_\n" }
-    map { (split /\s+/, $_)[0] }
+    map  { "=pkg $_\n" }
+    grep { ! /$remove/ }
+    map  { (split /\s+/, $_)[0] }
     grep { ! m!\s\S+/Dist-Zilla-\d\.\d{6}.tar.gz$! }
     qx{ zgrep Dist::Zilla::Plugin:: $modlist };
 my $p1 = firstidx { /^=pkgroup Plugins$/ } @lines;
