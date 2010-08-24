@@ -30,11 +30,13 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::AssertOS
 
+=pkg Dist::Zilla::Plugin::Author::KENTNL::DistINI
+
 =pkg Dist::Zilla::Plugin::AutoVersion::Relative
 
-=pkg Dist::Zilla::Plugin::Bugtracker
+=pkg Dist::Zilla::Plugin::Bootstrap::lib
 
-=pkg Dist::Zilla::Plugin::BumpVersion
+=pkg Dist::Zilla::Plugin::Bugtracker
 
 =pkg Dist::Zilla::Plugin::BumpVersionFromGit
 
@@ -48,11 +50,15 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::CheckChangeLog
 
+=pkg Dist::Zilla::Plugin::CheckChangesHasContent
+
 =pkg Dist::Zilla::Plugin::CheckChangesTests
 
 =pkg Dist::Zilla::Plugin::CheckExtraTests
 
 =pkg Dist::Zilla::Plugin::CompileTests
+
+=pkg Dist::Zilla::Plugin::ConsistentVersionTest
 
 =pkg Dist::Zilla::Plugin::CopyReadmeFromBuild
 
@@ -60,19 +66,27 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::CriticTests
 
+=pkg Dist::Zilla::Plugin::CSJEWELL::AuthorTest
+
+=pkg Dist::Zilla::Plugin::CSJEWELL::BeforeBuild
+
+=pkg Dist::Zilla::Plugin::CSJEWELL::DotFileFix
+
+=pkg Dist::Zilla::Plugin::CSJEWELL::FTPUploadToOwnSite
+
+=pkg Dist::Zilla::Plugin::CSJEWELL::SubversionDist
+
+=pkg Dist::Zilla::Plugin::CSJEWELL::VersionGetter
+
 =pkg Dist::Zilla::Plugin::DistManifestTests
 
-=pkg Dist::Zilla::Plugin::ExecDir
+=pkg Dist::Zilla::Plugin::DualBuilders
 
-=pkg Dist::Zilla::Plugin::ExtraTests
+=pkg Dist::Zilla::Plugin::DynamicManifest
 
-=pkg Dist::Zilla::Plugin::FakeRelease
+=pkg Dist::Zilla::Plugin::EOLTests
 
 =pkg Dist::Zilla::Plugin::FatPacker
-
-=pkg Dist::Zilla::Plugin::FinderCode
-
-=pkg Dist::Zilla::Plugin::GatherDir
 
 =pkg Dist::Zilla::Plugin::Git
 
@@ -88,6 +102,12 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::Git::Tag
 
+=pkg Dist::Zilla::Plugin::GitFmtChanges
+
+=pkg Dist::Zilla::Plugin::GithubMeta
+
+=pkg Dist::Zilla::Plugin::GitObtain
+
 =pkg Dist::Zilla::Plugin::GitVersionCheckCJM
 
 =pkg Dist::Zilla::Plugin::HasVersionTests
@@ -102,25 +122,25 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::LatestPrereqs
 
-=pkg Dist::Zilla::Plugin::License
-
 =pkg Dist::Zilla::Plugin::LocaleMsgfmt
-
-=pkg Dist::Zilla::Plugin::MakeMaker
 
 =pkg Dist::Zilla::Plugin::MakeMaker::Awesome
 
 =pkg Dist::Zilla::Plugin::MakeMaker::SkipInstall
 
-=pkg Dist::Zilla::Plugin::Manifest
-
-=pkg Dist::Zilla::Plugin::ManifestSkip
-
 =pkg Dist::Zilla::Plugin::MatchManifest
 
-=pkg Dist::Zilla::Plugin::MetaConfig
+=pkg Dist::Zilla::Plugin::Mercurial
 
-=pkg Dist::Zilla::Plugin::MetaJSON
+=pkg Dist::Zilla::Plugin::Mercurial::Check
+
+=pkg Dist::Zilla::Plugin::Mercurial::Push
+
+=pkg Dist::Zilla::Plugin::Mercurial::Tag
+
+=pkg Dist::Zilla::Plugin::MetaData::BuiltWith
+
+=pkg Dist::Zilla::Plugin::MetaData::BuiltWith::All
 
 =pkg Dist::Zilla::Plugin::MetaNoIndex
 
@@ -134,27 +154,23 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::MetaRecommends
 
-=pkg Dist::Zilla::Plugin::MetaResources
-
-=pkg Dist::Zilla::Plugin::MetaTests
-
-=pkg Dist::Zilla::Plugin::MetaYAML
+=pkg Dist::Zilla::Plugin::MinimumPerl
 
 =pkg Dist::Zilla::Plugin::MinimumVersionTests
 
-=pkg Dist::Zilla::Plugin::ModuleBuild
-
 =pkg Dist::Zilla::Plugin::ModuleBuild::Custom
+
+=pkg Dist::Zilla::Plugin::ModuleBuild::XSOrPP
 
 =pkg Dist::Zilla::Plugin::ModuleInstall
 
-=pkg Dist::Zilla::Plugin::NextRelease
+=pkg Dist::Zilla::Plugin::NoAutomatedTesting
+
+=pkg Dist::Zilla::Plugin::NoTabsTests
+
+=pkg Dist::Zilla::Plugin::OurPkgVersion
 
 =pkg Dist::Zilla::Plugin::PerlTidy
-
-=pkg Dist::Zilla::Plugin::PkgVersion
-
-=pkg Dist::Zilla::Plugin::PodCoverageTests
 
 =pkg Dist::Zilla::Plugin::PodLoom
 
@@ -168,27 +184,41 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::Prepender
 
-=pkg Dist::Zilla::Plugin::Prereq
+=pkg Dist::Zilla::Plugin::ProgCriticTests
 
-=pkg Dist::Zilla::Plugin::PruneCruft
+=pkg Dist::Zilla::Plugin::PurePerlTests
 
-=pkg Dist::Zilla::Plugin::PruneFiles
-
-=pkg Dist::Zilla::Plugin::Readme
+=pkg Dist::Zilla::Plugin::ReadmeFromPod
 
 =pkg Dist::Zilla::Plugin::ReadmeMarkdownFromPod
 
 =pkg Dist::Zilla::Plugin::ReportVersions
 
+=pkg Dist::Zilla::Plugin::ReportVersions::Tiny
+
 =pkg Dist::Zilla::Plugin::Repository
 
-=pkg Dist::Zilla::Plugin::ShareDir
+=pkg Dist::Zilla::Plugin::Rsync
 
 =pkg Dist::Zilla::Plugin::Signature
+
+=pkg Dist::Zilla::Plugin::SubmittingPatches
 
 =pkg Dist::Zilla::Plugin::SurgicalPkgVersion
 
 =pkg Dist::Zilla::Plugin::SurgicalPodWeaver
+
+=pkg Dist::Zilla::Plugin::SVK
+
+=pkg Dist::Zilla::Plugin::SVK::Check
+
+=pkg Dist::Zilla::Plugin::SVK::Commit
+
+=pkg Dist::Zilla::Plugin::SVK::Push
+
+=pkg Dist::Zilla::Plugin::SVK::Tag
+
+=pkg Dist::Zilla::Plugin::SvnObtain
 
 =pkg Dist::Zilla::Plugin::SynopsisTests
 
@@ -196,7 +226,9 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::TemplateCJM
 
-=pkg Dist::Zilla::Plugin::TestRelease
+=pkg Dist::Zilla::Plugin::TemplateFiles
+
+=pkg Dist::Zilla::Plugin::Twitter
 
 =pkg Dist::Zilla::Plugin::UnusedVarsTests
 
@@ -214,31 +246,39 @@ in one go.
 
 =pkg Dist::Zilla::PluginBundle::AVAR
 
-=pkg Dist::Zilla::PluginBundle::Basic
+=pkg Dist::Zilla::PluginBundle::BINGOS
 
 =pkg Dist::Zilla::PluginBundle::CJM
 
-=pkg Dist::Zilla::PluginBundle::Classic
-
-=pkg Dist::Zilla::PluginBundle::FakeClassic
+=pkg Dist::Zilla::PluginBundle::CSJEWELL
 
 =pkg Dist::Zilla::PluginBundle::FAYLAND
 
-=pkg Dist::Zilla::PluginBundle::Filter
-
 =pkg Dist::Zilla::PluginBundle::Git
+
+=pkg Dist::Zilla::PluginBundle::IDOPEREL
 
 =pkg Dist::Zilla::PluginBundle::JQUELIN
 
+=pkg Dist::Zilla::PluginBundle::KENTNL
+
+=pkg Dist::Zilla::PluginBundle::KENTNL::Lite
+
 =pkg Dist::Zilla::PluginBundle::MARCEL
 
+=pkg Dist::Zilla::PluginBundle::Mercurial
+
 =pkg Dist::Zilla::PluginBundle::PDONELAN
+
+=pkg Dist::Zilla::PluginBundle::Rakudo
 
 =pkg Dist::Zilla::PluginBundle::RJBS
 
 =pkg Dist::Zilla::PluginBundle::ROKR
 
 =pkg Dist::Zilla::PluginBundle::ROKR::Basic
+
+=pkg Dist::Zilla::PluginBundle::SVK
 
 =head1 SEE ALSO
 
