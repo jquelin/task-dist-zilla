@@ -28,9 +28,7 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::ArchiveRelease
 
-=pkg Dist::Zilla::Plugin::AutoPrereq
-
-=pkg Dist::Zilla::Plugin::AutoVersion
+=pkg Dist::Zilla::Plugin::AssertOS
 
 =pkg Dist::Zilla::Plugin::AutoVersion::Relative
 
@@ -40,6 +38,14 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::BumpVersionFromGit
 
+=pkg Dist::Zilla::Plugin::Catalyst
+
+=pkg Dist::Zilla::Plugin::Catalyst::Helper
+
+=pkg Dist::Zilla::Plugin::Catalyst::New
+
+=pkg Dist::Zilla::Plugin::ChangelogFromGit
+
 =pkg Dist::Zilla::Plugin::CheckChangeLog
 
 =pkg Dist::Zilla::Plugin::CheckChangesTests
@@ -48,7 +54,7 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::CompileTests
 
-=pkg Dist::Zilla::Plugin::ConfirmRelease
+=pkg Dist::Zilla::Plugin::CopyReadmeFromBuild
 
 =pkg Dist::Zilla::Plugin::CopyTo
 
@@ -74,6 +80,10 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::Git::Commit
 
+=pkg Dist::Zilla::Plugin::Git::CommitBuild
+
+=pkg Dist::Zilla::Plugin::Git::Init
+
 =pkg Dist::Zilla::Plugin::Git::Push
 
 =pkg Dist::Zilla::Plugin::Git::Tag
@@ -83,8 +93,6 @@ in one go.
 =pkg Dist::Zilla::Plugin::HasVersionTests
 
 =pkg Dist::Zilla::Plugin::Homepage
-
-=pkg Dist::Zilla::Plugin::InlineFiles
 
 =pkg Dist::Zilla::Plugin::InlineFilesMARCEL
 
@@ -154,10 +162,6 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::PodSpellingTests
 
-=pkg Dist::Zilla::Plugin::PodSyntaxTests
-
-=pkg Dist::Zilla::Plugin::PodVersion
-
 =pkg Dist::Zilla::Plugin::PodWeaver
 
 =pkg Dist::Zilla::Plugin::PortabilityTests
@@ -182,6 +186,10 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::Signature
 
+=pkg Dist::Zilla::Plugin::SurgicalPkgVersion
+
+=pkg Dist::Zilla::Plugin::SurgicalPodWeaver
+
 =pkg Dist::Zilla::Plugin::SynopsisTests
 
 =pkg Dist::Zilla::Plugin::TaskWeaver
@@ -192,7 +200,7 @@ in one go.
 
 =pkg Dist::Zilla::Plugin::UnusedVarsTests
 
-=pkg Dist::Zilla::Plugin::UploadToCPAN
+=pkg Dist::Zilla::Plugin::UpdateGitHub
 
 =pkg Dist::Zilla::Plugin::VersionFromModule
 
@@ -227,6 +235,10 @@ in one go.
 =pkg Dist::Zilla::PluginBundle::PDONELAN
 
 =pkg Dist::Zilla::PluginBundle::RJBS
+
+=pkg Dist::Zilla::PluginBundle::ROKR
+
+=pkg Dist::Zilla::PluginBundle::ROKR::Basic
 
 =head1 SEE ALSO
 
