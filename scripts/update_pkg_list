@@ -7,9 +7,15 @@ use DB_File;
 use List::MoreUtils qw{ firstidx };
 use Regexp::Assemble;
 
+# ignore dzil v1 plugins
 my @dzilv1 = qw{ AllFiles InstallDirs PodTests };
 my $remove = Regexp::Assemble->new;
 $remove->add("$_\$") for @dzilv1;
+
+# ignore list
+$remove->add("$_\$") for (
+    'SanityTests', # deprecated
+);
 
 # fetch available plugins/bundles
 my $modlist = '/home/cpan/modules/02packages.details.txt.gz';
