@@ -2,6 +2,27 @@ Changelog for Task-Dist-Zilla
 
 {{$NEXT}}
 
+1.102470  2010-09-04 19:05:12 Europe/Paris
+ - don't list core plugins / bundles
+ - new plugins:
+     AssertOS, Author::KENTNL::DistINI, Bootstrap::lib, Bugtracker,
+     BuildWith, BuildWith::All, CSJEWELL::AuthorTest,
+     CSJEWELL::BeforeBuild, CSJEWELL::DotFileFix,
+     CSJEWELL::FTPUploadToOwnSite, CSJEWELL::SubversionDist,
+     CSJEWELL::VersionGetter Catalyst, Catalyst::Helper, Catalyst::New,
+     ChangelogFromGit, ConsistentVersionTest, CopyReadmeFromBuild,
+     DualBuilders, DynamicManifest, EOLTests, Git::CommitBuild,
+     Git::Init, GitFmtChanges, GithubMeta, GitObtain, MatchManifest,
+     Mercurial, Mercurial::Check, Mercurial::Push, Mercurial::Tag,
+     MinimumPerl, ModuleBuild::XSOrPP, NoAutomatedTesting, NoTabsTests,
+     OurPkgVersion, PurePerlTests, ProgCriticTests,
+     ReportVersions::Tiny, Rsync, SVK, SVK::Check, SVK::Commit,
+     SVK::Push, SVK::Tag, SubmittingPatches, SurgicalPkgVersion,
+     SurgicalPodWeaver, SvnObtain, TemplateFile, Twitter, UpdateGitHub
+ - new bundles:
+     BINGOS, CSJEWELL, IDOPEREL, KENTNL, KENTNL::Lite, Mercurial, ROKR,
+     ROKR::Basic, SVK
+
 1.100991  2010-04-09 18:44:47 Europe/Paris
  - new plugins: InlineFilesMARCEL, MakeMaker::Awesome
  - new bundle: AVAR
