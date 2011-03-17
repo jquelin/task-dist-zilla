@@ -1,7 +1,5 @@
 Changelog for Task-Dist-Zilla
 
-{{$NEXT}}
-
 1.110760  2011-03-17 10:13:17 Europe/Paris
  - removed plugins:
      Catalyst::Helper, MetaNoIndex (now in core), MetaRecommends, VersionFromPrev*

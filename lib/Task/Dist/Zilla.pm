@@ -1,12 +1,33 @@
+#
+# This file is part of Task-Dist-Zilla
+#
+# This software is copyright (c) 2010 by Jerome Quelin.
+#
+# This is free software; you can redistribute it and/or modify it under
+# the same terms as the Perl 5 programming language system itself.
+#
 use 5.008;
 use strict;
 use warnings;
 
 package Task::Dist::Zilla;
+BEGIN {
+  $Task::Dist::Zilla::VERSION = '1.110760';
+}
 # ABSTRACT: task to install dist-zilla and all its plugins
 
 1;
-__END__
+
+
+=pod
+
+=head1 NAME
+
+Task::Dist::Zilla - task to install dist-zilla and all its plugins
+
+=head1 VERSION
+
+version 1.110760
 
 =head1 SYNOPSIS
 
@@ -17,428 +38,429 @@ __END__
 This task is merely a placeholder to pull all dist-zilla related modules
 in one go.
 
+=head1 TASK CONTENTS
 
-=pkgroup Base application
+=head2 Base application
 
-=pkg Dist::Zilla
+=head3 L<Dist::Zilla>
 
-=pkgroup Plugins
+=head2 Plugins
 
-=pkg Dist::Zilla::Plugin::ApacheTest
+=head3 L<Dist::Zilla::Plugin::ApacheTest>
 
-=pkg Dist::Zilla::Plugin::ApocalypseTests
+=head3 L<Dist::Zilla::Plugin::ApocalypseTests>
 
-=pkg Dist::Zilla::Plugin::AppendExternalData
+=head3 L<Dist::Zilla::Plugin::AppendExternalData>
 
-=pkg Dist::Zilla::Plugin::ArchiveRelease
+=head3 L<Dist::Zilla::Plugin::ArchiveRelease>
 
-=pkg Dist::Zilla::Plugin::AssertOS
+=head3 L<Dist::Zilla::Plugin::AssertOS>
 
-=pkg Dist::Zilla::Plugin::Author::KENTNL::DistINI
+=head3 L<Dist::Zilla::Plugin::Author::KENTNL::DistINI>
 
-=pkg Dist::Zilla::Plugin::Authority
+=head3 L<Dist::Zilla::Plugin::Authority>
 
-=pkg Dist::Zilla::Plugin::AutoMetaResources
+=head3 L<Dist::Zilla::Plugin::AutoMetaResources>
 
-=pkg Dist::Zilla::Plugin::AutoVersion::Relative
+=head3 L<Dist::Zilla::Plugin::AutoVersion::Relative>
 
-=pkg Dist::Zilla::Plugin::BeJROCKWAY
+=head3 L<Dist::Zilla::Plugin::BeJROCKWAY>
 
-=pkg Dist::Zilla::Plugin::Bootstrap::lib
+=head3 L<Dist::Zilla::Plugin::Bootstrap::lib>
 
-=pkg Dist::Zilla::Plugin::Bugtracker
+=head3 L<Dist::Zilla::Plugin::Bugtracker>
 
-=pkg Dist::Zilla::Plugin::BuildFile
+=head3 L<Dist::Zilla::Plugin::BuildFile>
 
-=pkg Dist::Zilla::Plugin::BumpVersionFromGit
+=head3 L<Dist::Zilla::Plugin::BumpVersionFromGit>
 
-=pkg Dist::Zilla::Plugin::Catalyst
+=head3 L<Dist::Zilla::Plugin::Catalyst>
 
-=pkg Dist::Zilla::Plugin::Catalyst::New
+=head3 L<Dist::Zilla::Plugin::Catalyst::New>
 
-=pkg Dist::Zilla::Plugin::ChangelogFromGit
+=head3 L<Dist::Zilla::Plugin::ChangelogFromGit>
 
-=pkg Dist::Zilla::Plugin::CheckChangeLog
+=head3 L<Dist::Zilla::Plugin::CheckChangeLog>
 
-=pkg Dist::Zilla::Plugin::CheckChangesHasContent
+=head3 L<Dist::Zilla::Plugin::CheckChangesHasContent>
 
-=pkg Dist::Zilla::Plugin::CheckChangesTests
+=head3 L<Dist::Zilla::Plugin::CheckChangesTests>
 
-=pkg Dist::Zilla::Plugin::CheckExtraTests
+=head3 L<Dist::Zilla::Plugin::CheckExtraTests>
 
-=pkg Dist::Zilla::Plugin::CheckPrereqsIndexed
+=head3 L<Dist::Zilla::Plugin::CheckPrereqsIndexed>
 
-=pkg Dist::Zilla::Plugin::CompileTests
+=head3 L<Dist::Zilla::Plugin::CompileTests>
 
-=pkg Dist::Zilla::Plugin::Conflicts
+=head3 L<Dist::Zilla::Plugin::Conflicts>
 
-=pkg Dist::Zilla::Plugin::ConsistentVersionTest
+=head3 L<Dist::Zilla::Plugin::ConsistentVersionTest>
 
-=pkg Dist::Zilla::Plugin::CopyFilesFromBuild
+=head3 L<Dist::Zilla::Plugin::CopyFilesFromBuild>
 
-=pkg Dist::Zilla::Plugin::CopyMakefilePLFromBuild
+=head3 L<Dist::Zilla::Plugin::CopyMakefilePLFromBuild>
 
-=pkg Dist::Zilla::Plugin::CopyReadmeFromBuild
+=head3 L<Dist::Zilla::Plugin::CopyReadmeFromBuild>
 
-=pkg Dist::Zilla::Plugin::CopyTo
+=head3 L<Dist::Zilla::Plugin::CopyTo>
 
-=pkg Dist::Zilla::Plugin::CPANChangesTests
+=head3 L<Dist::Zilla::Plugin::CPANChangesTests>
 
-=pkg Dist::Zilla::Plugin::CriticTests
+=head3 L<Dist::Zilla::Plugin::CriticTests>
 
-=pkg Dist::Zilla::Plugin::CSJEWELL::AuthorTest
+=head3 L<Dist::Zilla::Plugin::CSJEWELL::AuthorTest>
 
-=pkg Dist::Zilla::Plugin::CSJEWELL::BeforeBuild
+=head3 L<Dist::Zilla::Plugin::CSJEWELL::BeforeBuild>
 
-=pkg Dist::Zilla::Plugin::CSJEWELL::DotFileFix
+=head3 L<Dist::Zilla::Plugin::CSJEWELL::DotFileFix>
 
-=pkg Dist::Zilla::Plugin::CSJEWELL::FTPUploadToOwnSite
+=head3 L<Dist::Zilla::Plugin::CSJEWELL::FTPUploadToOwnSite>
 
-=pkg Dist::Zilla::Plugin::CSJEWELL::SubversionDist
+=head3 L<Dist::Zilla::Plugin::CSJEWELL::SubversionDist>
 
-=pkg Dist::Zilla::Plugin::CSJEWELL::VersionGetter
+=head3 L<Dist::Zilla::Plugin::CSJEWELL::VersionGetter>
 
-=pkg Dist::Zilla::Plugin::CustomLicense
+=head3 L<Dist::Zilla::Plugin::CustomLicense>
 
-=pkg Dist::Zilla::Plugin::Deb::VersionFromChangelog
+=head3 L<Dist::Zilla::Plugin::Deb::VersionFromChangelog>
 
-=pkg Dist::Zilla::Plugin::DistManifestTests
+=head3 L<Dist::Zilla::Plugin::DistManifestTests>
 
-=pkg Dist::Zilla::Plugin::Doppelgaenger
+=head3 L<Dist::Zilla::Plugin::Doppelgaenger>
 
-=pkg Dist::Zilla::Plugin::DualBuilders
+=head3 L<Dist::Zilla::Plugin::DualBuilders>
 
-=pkg Dist::Zilla::Plugin::DualLife
+=head3 L<Dist::Zilla::Plugin::DualLife>
 
-=pkg Dist::Zilla::Plugin::DynamicManifest
+=head3 L<Dist::Zilla::Plugin::DynamicManifest>
 
-=pkg Dist::Zilla::Plugin::EOLTests
+=head3 L<Dist::Zilla::Plugin::EOLTests>
 
-=pkg Dist::Zilla::Plugin::FatPacker
+=head3 L<Dist::Zilla::Plugin::FatPacker>
 
-=pkg Dist::Zilla::Plugin::FileKeywords
+=head3 L<Dist::Zilla::Plugin::FileKeywords>
 
-=pkg Dist::Zilla::Plugin::FileKeywords::Standard
+=head3 L<Dist::Zilla::Plugin::FileKeywords::Standard>
 
-=pkg Dist::Zilla::Plugin::FindDirByRegex
+=head3 L<Dist::Zilla::Plugin::FindDirByRegex>
 
-=pkg Dist::Zilla::Plugin::GatherFromManifest
+=head3 L<Dist::Zilla::Plugin::GatherFromManifest>
 
-=pkg Dist::Zilla::Plugin::Git
+=head3 L<Dist::Zilla::Plugin::Git>
 
-=pkg Dist::Zilla::Plugin::Git::Check
+=head3 L<Dist::Zilla::Plugin::Git::Check>
 
-=pkg Dist::Zilla::Plugin::Git::Commit
+=head3 L<Dist::Zilla::Plugin::Git::Commit>
 
-=pkg Dist::Zilla::Plugin::Git::CommitBuild
+=head3 L<Dist::Zilla::Plugin::Git::CommitBuild>
 
-=pkg Dist::Zilla::Plugin::Git::DescribeVersion
+=head3 L<Dist::Zilla::Plugin::Git::DescribeVersion>
 
-=pkg Dist::Zilla::Plugin::Git::Init
+=head3 L<Dist::Zilla::Plugin::Git::Init>
 
-=pkg Dist::Zilla::Plugin::Git::NextVersion
+=head3 L<Dist::Zilla::Plugin::Git::NextVersion>
 
-=pkg Dist::Zilla::Plugin::Git::Push
+=head3 L<Dist::Zilla::Plugin::Git::Push>
 
-=pkg Dist::Zilla::Plugin::Git::Tag
+=head3 L<Dist::Zilla::Plugin::Git::Tag>
 
-=pkg Dist::Zilla::Plugin::Git::Tag::ForRelease
+=head3 L<Dist::Zilla::Plugin::Git::Tag::ForRelease>
 
-=pkg Dist::Zilla::Plugin::GitFmtChanges
+=head3 L<Dist::Zilla::Plugin::GitFmtChanges>
 
-=pkg Dist::Zilla::Plugin::GitHub
+=head3 L<Dist::Zilla::Plugin::GitHub>
 
-=pkg Dist::Zilla::Plugin::GitHub::Create
+=head3 L<Dist::Zilla::Plugin::GitHub::Create>
 
-=pkg Dist::Zilla::Plugin::GitHub::Meta
+=head3 L<Dist::Zilla::Plugin::GitHub::Meta>
 
-=pkg Dist::Zilla::Plugin::GitHub::Update
+=head3 L<Dist::Zilla::Plugin::GitHub::Update>
 
-=pkg Dist::Zilla::Plugin::GithubMeta
+=head3 L<Dist::Zilla::Plugin::GithubMeta>
 
-=pkg Dist::Zilla::Plugin::GithubUpdate
+=head3 L<Dist::Zilla::Plugin::GithubUpdate>
 
-=pkg Dist::Zilla::Plugin::GitObtain
+=head3 L<Dist::Zilla::Plugin::GitObtain>
 
-=pkg Dist::Zilla::Plugin::GitVersionCheckCJM
+=head3 L<Dist::Zilla::Plugin::GitVersionCheckCJM>
 
-=pkg Dist::Zilla::Plugin::HasVersionTests
+=head3 L<Dist::Zilla::Plugin::HasVersionTests>
 
-=pkg Dist::Zilla::Plugin::Homepage
+=head3 L<Dist::Zilla::Plugin::Homepage>
 
-=pkg Dist::Zilla::Plugin::Inject
+=head3 L<Dist::Zilla::Plugin::Inject>
 
-=pkg Dist::Zilla::Plugin::InlineFilesMARCEL
+=head3 L<Dist::Zilla::Plugin::InlineFilesMARCEL>
 
-=pkg Dist::Zilla::Plugin::InstallGuide
+=head3 L<Dist::Zilla::Plugin::InstallGuide>
 
-=pkg Dist::Zilla::Plugin::InstallRelease
+=head3 L<Dist::Zilla::Plugin::InstallRelease>
 
-=pkg Dist::Zilla::Plugin::JSAN
+=head3 L<Dist::Zilla::Plugin::JSAN>
 
-=pkg Dist::Zilla::Plugin::JSAN::Bundle
+=head3 L<Dist::Zilla::Plugin::JSAN::Bundle>
 
-=pkg Dist::Zilla::Plugin::JSAN::GatherDir::Template
+=head3 L<Dist::Zilla::Plugin::JSAN::GatherDir::Template>
 
-=pkg Dist::Zilla::Plugin::JSAN::GitHubDocs
+=head3 L<Dist::Zilla::Plugin::JSAN::GitHubDocs>
 
-=pkg Dist::Zilla::Plugin::JSAN::InstallInstructions
+=head3 L<Dist::Zilla::Plugin::JSAN::InstallInstructions>
 
-=pkg Dist::Zilla::Plugin::JSAN::Minter
+=head3 L<Dist::Zilla::Plugin::JSAN::Minter>
 
-=pkg Dist::Zilla::Plugin::JSAN::NPM
+=head3 L<Dist::Zilla::Plugin::JSAN::NPM>
 
-=pkg Dist::Zilla::Plugin::JSAN::NPM::Publish
+=head3 L<Dist::Zilla::Plugin::JSAN::NPM::Publish>
 
-=pkg Dist::Zilla::Plugin::JSAN::PkgVersion
+=head3 L<Dist::Zilla::Plugin::JSAN::PkgVersion>
 
-=pkg Dist::Zilla::Plugin::JSAN::ReadmeFromMD
+=head3 L<Dist::Zilla::Plugin::JSAN::ReadmeFromMD>
 
-=pkg Dist::Zilla::Plugin::JSAN::StaticDir
+=head3 L<Dist::Zilla::Plugin::JSAN::StaticDir>
 
-=pkg Dist::Zilla::Plugin::KwaliteeTests
+=head3 L<Dist::Zilla::Plugin::KwaliteeTests>
 
-=pkg Dist::Zilla::Plugin::LatestPrereqs
+=head3 L<Dist::Zilla::Plugin::LatestPrereqs>
 
-=pkg Dist::Zilla::Plugin::LocaleMsgfmt
+=head3 L<Dist::Zilla::Plugin::LocaleMsgfmt>
 
-=pkg Dist::Zilla::Plugin::MakeMaker::Awesome
+=head3 L<Dist::Zilla::Plugin::MakeMaker::Awesome>
 
-=pkg Dist::Zilla::Plugin::MakeMaker::SkipInstall
+=head3 L<Dist::Zilla::Plugin::MakeMaker::SkipInstall>
 
-=pkg Dist::Zilla::Plugin::MatchManifest
+=head3 L<Dist::Zilla::Plugin::MatchManifest>
 
-=pkg Dist::Zilla::Plugin::Mercurial
+=head3 L<Dist::Zilla::Plugin::Mercurial>
 
-=pkg Dist::Zilla::Plugin::Mercurial::Check
+=head3 L<Dist::Zilla::Plugin::Mercurial::Check>
 
-=pkg Dist::Zilla::Plugin::Mercurial::Push
+=head3 L<Dist::Zilla::Plugin::Mercurial::Push>
 
-=pkg Dist::Zilla::Plugin::Mercurial::Tag
+=head3 L<Dist::Zilla::Plugin::Mercurial::Tag>
 
-=pkg Dist::Zilla::Plugin::Metadata
+=head3 L<Dist::Zilla::Plugin::Metadata>
 
-=pkg Dist::Zilla::Plugin::MetaData::BuiltWith
+=head3 L<Dist::Zilla::Plugin::MetaData::BuiltWith>
 
-=pkg Dist::Zilla::Plugin::MetaData::BuiltWith::All
+=head3 L<Dist::Zilla::Plugin::MetaData::BuiltWith::All>
 
-=pkg Dist::Zilla::Plugin::MetaProvides
+=head3 L<Dist::Zilla::Plugin::MetaProvides>
 
-=pkg Dist::Zilla::Plugin::MetaProvides::Class
+=head3 L<Dist::Zilla::Plugin::MetaProvides::Class>
 
-=pkg Dist::Zilla::Plugin::MetaProvides::FromFile
+=head3 L<Dist::Zilla::Plugin::MetaProvides::FromFile>
 
-=pkg Dist::Zilla::Plugin::MetaProvides::Package
+=head3 L<Dist::Zilla::Plugin::MetaProvides::Package>
 
-=pkg Dist::Zilla::Plugin::MetaResourcesFromGit
+=head3 L<Dist::Zilla::Plugin::MetaResourcesFromGit>
 
-=pkg Dist::Zilla::Plugin::MinimumPerl
+=head3 L<Dist::Zilla::Plugin::MinimumPerl>
 
-=pkg Dist::Zilla::Plugin::MinimumVersionTests
+=head3 L<Dist::Zilla::Plugin::MinimumVersionTests>
 
-=pkg Dist::Zilla::Plugin::ModuleBuild::Custom
+=head3 L<Dist::Zilla::Plugin::ModuleBuild::Custom>
 
-=pkg Dist::Zilla::Plugin::ModuleBuild::XSOrPP
+=head3 L<Dist::Zilla::Plugin::ModuleBuild::XSOrPP>
 
-=pkg Dist::Zilla::Plugin::ModuleInstall
+=head3 L<Dist::Zilla::Plugin::ModuleInstall>
 
-=pkg Dist::Zilla::Plugin::NoAutomatedTesting
+=head3 L<Dist::Zilla::Plugin::NoAutomatedTesting>
 
-=pkg Dist::Zilla::Plugin::NoSmartCommentsTests
+=head3 L<Dist::Zilla::Plugin::NoSmartCommentsTests>
 
-=pkg Dist::Zilla::Plugin::NoTabsTests
+=head3 L<Dist::Zilla::Plugin::NoTabsTests>
 
-=pkg Dist::Zilla::Plugin::OSPrereqs
+=head3 L<Dist::Zilla::Plugin::OSPrereqs>
 
-=pkg Dist::Zilla::Plugin::OurPkgVersion
+=head3 L<Dist::Zilla::Plugin::OurPkgVersion>
 
-=pkg Dist::Zilla::Plugin::PerlTidy
+=head3 L<Dist::Zilla::Plugin::PerlTidy>
 
-=pkg Dist::Zilla::Plugin::PickyPodWeaver
+=head3 L<Dist::Zilla::Plugin::PickyPodWeaver>
 
-=pkg Dist::Zilla::Plugin::PodLinkTests
+=head3 L<Dist::Zilla::Plugin::PodLinkTests>
 
-=pkg Dist::Zilla::Plugin::PodLoom
+=head3 L<Dist::Zilla::Plugin::PodLoom>
 
-=pkg Dist::Zilla::Plugin::PodPurler
+=head3 L<Dist::Zilla::Plugin::PodPurler>
 
-=pkg Dist::Zilla::Plugin::PodSpellingTests
+=head3 L<Dist::Zilla::Plugin::PodSpellingTests>
 
-=pkg Dist::Zilla::Plugin::PodWeaver
+=head3 L<Dist::Zilla::Plugin::PodWeaver>
 
-=pkg Dist::Zilla::Plugin::PortabilityTests
+=head3 L<Dist::Zilla::Plugin::PortabilityTests>
 
-=pkg Dist::Zilla::Plugin::Prepender
+=head3 L<Dist::Zilla::Plugin::Prepender>
 
-=pkg Dist::Zilla::Plugin::ProgCriticTests
+=head3 L<Dist::Zilla::Plugin::ProgCriticTests>
 
-=pkg Dist::Zilla::Plugin::PurePerlTests
+=head3 L<Dist::Zilla::Plugin::PurePerlTests>
 
-=pkg Dist::Zilla::Plugin::ReadmeAnyFromPod
+=head3 L<Dist::Zilla::Plugin::ReadmeAnyFromPod>
 
-=pkg Dist::Zilla::Plugin::ReadmeFromPod
+=head3 L<Dist::Zilla::Plugin::ReadmeFromPod>
 
-=pkg Dist::Zilla::Plugin::ReadmeMarkdownFromPod
+=head3 L<Dist::Zilla::Plugin::ReadmeMarkdownFromPod>
 
-=pkg Dist::Zilla::Plugin::ReportPhase
+=head3 L<Dist::Zilla::Plugin::ReportPhase>
 
-=pkg Dist::Zilla::Plugin::ReportVersions
+=head3 L<Dist::Zilla::Plugin::ReportVersions>
 
-=pkg Dist::Zilla::Plugin::ReportVersions::Tiny
+=head3 L<Dist::Zilla::Plugin::ReportVersions::Tiny>
 
-=pkg Dist::Zilla::Plugin::Repository
+=head3 L<Dist::Zilla::Plugin::Repository>
 
-=pkg Dist::Zilla::Plugin::RequiresExternal
+=head3 L<Dist::Zilla::Plugin::RequiresExternal>
 
-=pkg Dist::Zilla::Plugin::Rsync
+=head3 L<Dist::Zilla::Plugin::Rsync>
 
-=pkg Dist::Zilla::Plugin::Run
+=head3 L<Dist::Zilla::Plugin::Run>
 
-=pkg Dist::Zilla::Plugin::Run::AfterBuild
+=head3 L<Dist::Zilla::Plugin::Run::AfterBuild>
 
-=pkg Dist::Zilla::Plugin::Run::AfterRelease
+=head3 L<Dist::Zilla::Plugin::Run::AfterRelease>
 
-=pkg Dist::Zilla::Plugin::Run::BeforeBuild
+=head3 L<Dist::Zilla::Plugin::Run::BeforeBuild>
 
-=pkg Dist::Zilla::Plugin::Run::BeforeRelease
+=head3 L<Dist::Zilla::Plugin::Run::BeforeRelease>
 
-=pkg Dist::Zilla::Plugin::Run::Release
+=head3 L<Dist::Zilla::Plugin::Run::Release>
 
-=pkg Dist::Zilla::Plugin::Run::Role::Runner
+=head3 L<Dist::Zilla::Plugin::Run::Role::Runner>
 
-=pkg Dist::Zilla::Plugin::Signature
+=head3 L<Dist::Zilla::Plugin::Signature>
 
-=pkg Dist::Zilla::Plugin::StaticVersion
+=head3 L<Dist::Zilla::Plugin::StaticVersion>
 
-=pkg Dist::Zilla::Plugin::SubmittingPatches
+=head3 L<Dist::Zilla::Plugin::SubmittingPatches>
 
-=pkg Dist::Zilla::Plugin::Subversion
+=head3 L<Dist::Zilla::Plugin::Subversion>
 
-=pkg Dist::Zilla::Plugin::Subversion::ReleaseDist
+=head3 L<Dist::Zilla::Plugin::Subversion::ReleaseDist>
 
-=pkg Dist::Zilla::Plugin::Subversion::Tag
+=head3 L<Dist::Zilla::Plugin::Subversion::Tag>
 
-=pkg Dist::Zilla::Plugin::SurgicalPkgVersion
+=head3 L<Dist::Zilla::Plugin::SurgicalPkgVersion>
 
-=pkg Dist::Zilla::Plugin::SurgicalPodWeaver
+=head3 L<Dist::Zilla::Plugin::SurgicalPodWeaver>
 
-=pkg Dist::Zilla::Plugin::SVK
+=head3 L<Dist::Zilla::Plugin::SVK>
 
-=pkg Dist::Zilla::Plugin::SVK::Check
+=head3 L<Dist::Zilla::Plugin::SVK::Check>
 
-=pkg Dist::Zilla::Plugin::SVK::Commit
+=head3 L<Dist::Zilla::Plugin::SVK::Commit>
 
-=pkg Dist::Zilla::Plugin::SVK::Push
+=head3 L<Dist::Zilla::Plugin::SVK::Push>
 
-=pkg Dist::Zilla::Plugin::SVK::Tag
+=head3 L<Dist::Zilla::Plugin::SVK::Tag>
 
-=pkg Dist::Zilla::Plugin::SvnObtain
+=head3 L<Dist::Zilla::Plugin::SvnObtain>
 
-=pkg Dist::Zilla::Plugin::SynopsisTests
+=head3 L<Dist::Zilla::Plugin::SynopsisTests>
 
-=pkg Dist::Zilla::Plugin::TaskWeaver
+=head3 L<Dist::Zilla::Plugin::TaskWeaver>
 
-=pkg Dist::Zilla::Plugin::TemplateCJM
+=head3 L<Dist::Zilla::Plugin::TemplateCJM>
 
-=pkg Dist::Zilla::Plugin::TemplateFiles
+=head3 L<Dist::Zilla::Plugin::TemplateFiles>
 
-=pkg Dist::Zilla::Plugin::Twitter
+=head3 L<Dist::Zilla::Plugin::Twitter>
 
-=pkg Dist::Zilla::Plugin::UnusedVarsTests
+=head3 L<Dist::Zilla::Plugin::UnusedVarsTests>
 
-=pkg Dist::Zilla::Plugin::UpdateGitHub
+=head3 L<Dist::Zilla::Plugin::UpdateGitHub>
 
-=pkg Dist::Zilla::Plugin::VersionFromModule
+=head3 L<Dist::Zilla::Plugin::VersionFromModule>
 
-=pkg Dist::Zilla::Plugin::WSDL
+=head3 L<Dist::Zilla::Plugin::WSDL>
 
-=pkg Dist::Zilla::Plugin::WSDL::Types
+=head3 L<Dist::Zilla::Plugin::WSDL::Types>
 
-=pkgroup Plugin bundles
+=head2 Plugin bundles
 
-=pkg Dist::Zilla::PluginBundle::AJGB
+=head3 L<Dist::Zilla::PluginBundle::AJGB>
 
-=pkg Dist::Zilla::PluginBundle::Author::DOHERTY
+=head3 L<Dist::Zilla::PluginBundle::Author::DOHERTY>
 
-=pkg Dist::Zilla::PluginBundle::Author::KENTNL
+=head3 L<Dist::Zilla::PluginBundle::Author::KENTNL>
 
-=pkg Dist::Zilla::PluginBundle::Author::KENTNL::Lite
+=head3 L<Dist::Zilla::PluginBundle::Author::KENTNL::Lite>
 
-=pkg Dist::Zilla::PluginBundle::Author::LESPEA
+=head3 L<Dist::Zilla::PluginBundle::Author::LESPEA>
 
-=pkg Dist::Zilla::PluginBundle::Author::OLIVER
+=head3 L<Dist::Zilla::PluginBundle::Author::OLIVER>
 
-=pkg Dist::Zilla::PluginBundle::AVAR
+=head3 L<Dist::Zilla::PluginBundle::AVAR>
 
-=pkg Dist::Zilla::PluginBundle::BINGOS
+=head3 L<Dist::Zilla::PluginBundle::BINGOS>
 
-=pkg Dist::Zilla::PluginBundle::CEBJYRE
+=head3 L<Dist::Zilla::PluginBundle::CEBJYRE>
 
-=pkg Dist::Zilla::PluginBundle::CJM
+=head3 L<Dist::Zilla::PluginBundle::CJM>
 
-=pkg Dist::Zilla::PluginBundle::CSJEWELL
+=head3 L<Dist::Zilla::PluginBundle::CSJEWELL>
 
-=pkg Dist::Zilla::PluginBundle::DAGOLDEN
+=head3 L<Dist::Zilla::PluginBundle::DAGOLDEN>
 
-=pkg Dist::Zilla::PluginBundle::DANIELP
+=head3 L<Dist::Zilla::PluginBundle::DANIELP>
 
-=pkg Dist::Zilla::PluginBundle::DOY
+=head3 L<Dist::Zilla::PluginBundle::DOY>
 
-=pkg Dist::Zilla::PluginBundle::FAYLAND
+=head3 L<Dist::Zilla::PluginBundle::FAYLAND>
 
-=pkg Dist::Zilla::PluginBundle::FLORA
+=head3 L<Dist::Zilla::PluginBundle::FLORA>
 
-=pkg Dist::Zilla::PluginBundle::GENEHACK
+=head3 L<Dist::Zilla::PluginBundle::GENEHACK>
 
-=pkg Dist::Zilla::PluginBundle::GETTY
+=head3 L<Dist::Zilla::PluginBundle::GETTY>
 
-=pkg Dist::Zilla::PluginBundle::Git
+=head3 L<Dist::Zilla::PluginBundle::Git>
 
-=pkg Dist::Zilla::PluginBundle::GitHub
+=head3 L<Dist::Zilla::PluginBundle::GitHub>
 
-=pkg Dist::Zilla::PluginBundle::GopherRepellent
+=head3 L<Dist::Zilla::PluginBundle::GopherRepellent>
 
-=pkg Dist::Zilla::PluginBundle::IDOPEREL
+=head3 L<Dist::Zilla::PluginBundle::IDOPEREL>
 
-=pkg Dist::Zilla::PluginBundle::JQUELIN
+=head3 L<Dist::Zilla::PluginBundle::JQUELIN>
 
-=pkg Dist::Zilla::PluginBundle::JROCKWAY
+=head3 L<Dist::Zilla::PluginBundle::JROCKWAY>
 
-=pkg Dist::Zilla::PluginBundle::MARCEL
+=head3 L<Dist::Zilla::PluginBundle::MARCEL>
 
-=pkg Dist::Zilla::PluginBundle::Mercurial
+=head3 L<Dist::Zilla::PluginBundle::Mercurial>
 
-=pkg Dist::Zilla::PluginBundle::MSCHOUT
+=head3 L<Dist::Zilla::PluginBundle::MSCHOUT>
 
-=pkg Dist::Zilla::PluginBundle::NIGELM
+=head3 L<Dist::Zilla::PluginBundle::NIGELM>
 
-=pkg Dist::Zilla::PluginBundle::NUFFIN
+=head3 L<Dist::Zilla::PluginBundle::NUFFIN>
 
-=pkg Dist::Zilla::PluginBundle::PadrePlugin
+=head3 L<Dist::Zilla::PluginBundle::PadrePlugin>
 
-=pkg Dist::Zilla::PluginBundle::PDONELAN
+=head3 L<Dist::Zilla::PluginBundle::PDONELAN>
 
-=pkg Dist::Zilla::PluginBundle::Rakudo
+=head3 L<Dist::Zilla::PluginBundle::Rakudo>
 
-=pkg Dist::Zilla::PluginBundle::RBO
+=head3 L<Dist::Zilla::PluginBundle::RBO>
 
-=pkg Dist::Zilla::PluginBundle::RBUELS
+=head3 L<Dist::Zilla::PluginBundle::RBUELS>
 
-=pkg Dist::Zilla::PluginBundle::RJBS
+=head3 L<Dist::Zilla::PluginBundle::RJBS>
 
-=pkg Dist::Zilla::PluginBundle::ROKR
+=head3 L<Dist::Zilla::PluginBundle::ROKR>
 
-=pkg Dist::Zilla::PluginBundle::ROKR::Basic
+=head3 L<Dist::Zilla::PluginBundle::ROKR::Basic>
 
-=pkg Dist::Zilla::PluginBundle::RTHOMPSON
+=head3 L<Dist::Zilla::PluginBundle::RTHOMPSON>
 
-=pkg Dist::Zilla::PluginBundle::SVK
+=head3 L<Dist::Zilla::PluginBundle::SVK>
 
-=pkg Dist::Zilla::PluginBundle::TestingMania
+=head3 L<Dist::Zilla::PluginBundle::TestingMania>
 
-=pkg Dist::Zilla::PluginBundle::WOLVERIAN
+=head3 L<Dist::Zilla::PluginBundle::WOLVERIAN>
 
-=pkg Dist::Zilla::PluginBundle::YANICK
+=head3 L<Dist::Zilla::PluginBundle::YANICK>
 
 =head1 SEE ALSO
 
@@ -472,4 +494,19 @@ L<http://cpanratings.perl.org/d/Task-Dist-Zilla>
 
 =back
 
+=head1 AUTHOR
+
+Jerome Quelin
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2010 by Jerome Quelin.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+
+
+__END__
 
