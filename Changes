@@ -2,6 +2,28 @@ Changelog for Task-Dist-Zilla
 
 {{$NEXT}}
 
+1.110760  2011-03-17 10:13:17 Europe/Paris
+ - removed plugins:
+     Catalyst::Helper, MetaNoIndex (now in core), MetaRecommends, VersionFromPrev*
+ - new plugins:
+        ApocalypseTests, AppendExternalData, Authority, AutoMetaResources,
+        BeJROCKWAY, BuildFile, CheckPrereqsIndexed, Conflicts,
+        CopyFilesFromBuild, CopyMakefilePLFromBuild, CPANChangesTests,
+        CustomLicense, Deb::VersionFromChangelog, Doppelgaenger, DualLife,
+        FileKeywords*, FindDirByRegex, GatherFromManifest, Git::DescribeVersion,
+        Git::NextVersion, Git::Tag::ForRelease, Github*, GithubUpdate, Inject,
+        InstallRelease, JSAN*, Metadata, MetaResourcesFromGit,
+        NoSmartCommentsTests, OSPrereqs, PickyPodWeaver, PodLinkTests,
+        ReadmeAnyFromPod, ReportPhase, RequiresExternal, Run*, StaticVersion,
+        Subversion*, WSDL*, 
+ - new bundles:
+        AJGB, Author::DOHERTY, Author::KENTNL* (replacing KENTNL*),
+        Author::LESPEA, Author::OLIVER, CEBJYRE, DAGOLDEN, DANIELP, DOY, FLORA,
+        GENEHACK, GETTY, GitHub, GopherRepellent, JROCKWAY, MSCHOUT, NIGELM,
+        NUFFIN, PadrePlugin, RBO, RBUELS, RTHOMPSON, AuthorTestingMania,
+        WOLVERIAN, YANICK
+
+
 1.102470  2010-09-04 19:05:12 Europe/Paris
  - don't list core plugins / bundles
  - new plugins:
