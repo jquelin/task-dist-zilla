@@ -22,6 +22,30 @@ in one go.
 
 =pkg Dist::Zilla
 
+=pkgroup Commands
+
+=pkg Dist::Zilla::App::Command::configure_CSJEWELL
+
+=pkg Dist::Zilla::App::Command::cover
+
+=pkg Dist::Zilla::App::Command::debc
+
+=pkg Dist::Zilla::App::Command::debi
+
+=pkg Dist::Zilla::App::Command::debrelease
+
+=pkg Dist::Zilla::App::Command::debuild
+
+=pkg Dist::Zilla::App::Command::perltidy
+
+=pkg Dist::Zilla::App::Command::podpreview
+
+=pkg Dist::Zilla::App::Command::pot
+
+=pkg Dist::Zilla::App::Command::weaverconf
+
+=pkg Dist::Zilla::App::Command::xtest
+
 =pkgroup Plugins
 
 =pkg Dist::Zilla::Plugin::ApacheTest
@@ -155,8 +179,6 @@ in one go.
 =pkg Dist::Zilla::Plugin::GitHub::Update
 
 =pkg Dist::Zilla::Plugin::GithubMeta
-
-=pkg Dist::Zilla::Plugin::GithubUpdate
 
 =pkg Dist::Zilla::Plugin::GitObtain
 
@@ -351,8 +373,6 @@ in one go.
 =pkg Dist::Zilla::Plugin::VersionFromModule
 
 =pkg Dist::Zilla::Plugin::WSDL
-
-=pkg Dist::Zilla::Plugin::WSDL::Types
 
 =pkgroup Plugin bundles
 
