@@ -19,7 +19,7 @@ name: Task-Dist-Zilla
 provides:
   Task::Dist::Zilla:
     file: lib/Task/Dist/Zilla.pm
-    version: 1.111680
+    version: 1.111681
 requires:
   Dist::Zilla: 0
   Dist::Zilla::App::Command::configure_CSJEWELL: 0
@@ -31,7 +31,6 @@ requires:
   Dist::Zilla::App::Command::perltidy: 0
   Dist::Zilla::App::Command::podpreview: 0
   Dist::Zilla::App::Command::pot: 0
-  Dist::Zilla::App::Command::weaverconf: 0
   Dist::Zilla::App::Command::xtest: 0
   Dist::Zilla::Plugin::ApacheTest: 0
   Dist::Zilla::Plugin::ApocalypseTests: 0
@@ -244,7 +243,7 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Task-Dist-Zilla
   homepage: http://search.cpan.org/dist/Task-Dist-Zilla/
   repository: git://github.com/jquelin/task-dist-zilla.git
-version: 1.111680
+version: 1.111681
 x_Dist_Zilla:
   plugins:
     -

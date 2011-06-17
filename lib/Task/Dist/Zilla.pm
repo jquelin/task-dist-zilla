@@ -12,7 +12,7 @@ use warnings;
 
 package Task::Dist::Zilla;
 BEGIN {
-  $Task::Dist::Zilla::VERSION = '1.111680';
+  $Task::Dist::Zilla::VERSION = '1.111681';
 }
 # ABSTRACT: task to install dist-zilla and all its plugins
 
@@ -27,7 +27,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.111680
+version 1.111681
 
 =head1 SYNOPSIS
 
@@ -63,8 +63,6 @@ in one go.
 =head3 L<Dist::Zilla::App::Command::podpreview>
 
 =head3 L<Dist::Zilla::App::Command::pot>
-
-=head3 L<Dist::Zilla::App::Command::weaverconf>
 
 =head3 L<Dist::Zilla::App::Command::xtest>
 

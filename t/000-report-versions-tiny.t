@@ -58,7 +58,6 @@ eval { $v .= pmver('Dist::Zilla::App::Command::debuild','any version') };
 eval { $v .= pmver('Dist::Zilla::App::Command::perltidy','any version') };
 eval { $v .= pmver('Dist::Zilla::App::Command::podpreview','any version') };
 eval { $v .= pmver('Dist::Zilla::App::Command::pot','any version') };
-eval { $v .= pmver('Dist::Zilla::App::Command::weaverconf','any version') };
 eval { $v .= pmver('Dist::Zilla::App::Command::xtest','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::ApacheTest','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::ApocalypseTests','any version') };

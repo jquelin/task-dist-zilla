@@ -36,7 +36,6 @@
             "Dist::Zilla::App::Command::perltidy" : 0,
             "Dist::Zilla::App::Command::podpreview" : 0,
             "Dist::Zilla::App::Command::pot" : 0,
-            "Dist::Zilla::App::Command::weaverconf" : 0,
             "Dist::Zilla::App::Command::xtest" : 0,
             "Dist::Zilla::Plugin::ApacheTest" : 0,
             "Dist::Zilla::Plugin::ApocalypseTests" : 0,
@@ -257,7 +256,7 @@
    "provides" : {
       "Task::Dist::Zilla" : {
          "file" : "lib/Task/Dist/Zilla.pm",
-         "version" : "1.111680"
+         "version" : "1.111681"
       }
    },
    "release_status" : "stable",
@@ -274,7 +273,7 @@
       },
       "x_mailing_list" : "http://www.listbox.com/subscribe/?list_id=139292"
    },
-   "version" : "1.111680",
+   "version" : "1.111681",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

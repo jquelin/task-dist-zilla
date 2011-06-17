@@ -1,5 +1,9 @@
 Changelog for Task-Dist-Zilla
 
+1.111681  2011-06-17 18:51:59 Europe/Paris
+ - removing command:
+        weaverconf (due to bug #67379)
+
 1.111680  2011-06-17 14:38:57 Europe/Paris
  - introducing dzil commands:
         configure_CSJEWELL, cover, debc, debi, debrelease, debuild, perltidy,

@@ -20,7 +20,7 @@ my %module_build_args = (
     'Jerome Quelin'
   ],
   'dist_name' => 'Task-Dist-Zilla',
-  'dist_version' => '1.111680',
+  'dist_version' => '1.111681',
   'license' => 'perl',
   'module_name' => 'Task::Dist::Zilla',
   'recommends' => {},
@@ -36,7 +36,6 @@ my %module_build_args = (
     'Dist::Zilla::App::Command::perltidy' => '0',
     'Dist::Zilla::App::Command::podpreview' => '0',
     'Dist::Zilla::App::Command::pot' => '0',
-    'Dist::Zilla::App::Command::weaverconf' => '0',
     'Dist::Zilla::App::Command::xtest' => '0',
     'Dist::Zilla::Plugin::ApacheTest' => '0',
     'Dist::Zilla::Plugin::ApocalypseTests' => '0',
