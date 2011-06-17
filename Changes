@@ -1,5 +1,12 @@
 Changelog for Task-Dist-Zilla
 
+1.111680  2011-06-17 14:38:57 Europe/Paris
+ - introducing dzil commands:
+        configure_CSJEWELL, cover, debc, debi, debrelease, debuild, perltidy,
+        podpreview, pot, weaverconf, xtest
+ - removed plugins:
+        GithubUpdate, WSDL::Types
+
 1.110760  2011-03-17 10:13:17 Europe/Paris
  - removed plugins:
      Catalyst::Helper, MetaNoIndex (now in core), MetaRecommends, VersionFromPrev*

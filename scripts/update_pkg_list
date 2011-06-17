@@ -23,6 +23,7 @@ $remove->add("$_\$") for @dzilv1;
 # ignore list
 $remove->add("$_\$") for (
     'SanityTests', # deprecated
+    'WSDL::Types', # deprecated
 );
 
 # fetch available plugins/bundles
@@ -33,6 +34,17 @@ my $task = 'lib/Task/Dist/Zilla.pm';
 my @lines;
 tie @lines, 'DB_File', $task, O_RDWR|O_CREAT, 0666, $DB_RECNO
     or die "can't open $task: $!";
+
+# update commands
+my @commands =
+    map  { "=pkg $_\n" }
+    grep { ! /$remove/ }
+    map  { (split /\s+/, $_)[0] }
+    grep { ! m!\s\S+/Dist-Zilla-\d\.\d{6}.tar.gz$! }
+    qx{ zgrep Dist::Zilla::App::Command:: $modlist };
+my $c1 = firstidx { /^=pkgroup Commands$/ } @lines;
+my $c2 = firstidx { /^=pkgroup Plugins$/ } @lines;
+splice @lines, $c1+2, $c2-$c1-2, @commands;
 
 # update plugins
 my @plugins =

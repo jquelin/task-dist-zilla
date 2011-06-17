@@ -49,6 +49,17 @@ sub pmver {
 }
 
 eval { $v .= pmver('Dist::Zilla','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::configure_CSJEWELL','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::cover','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::debc','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::debi','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::debrelease','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::debuild','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::perltidy','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::podpreview','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::pot','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::weaverconf','any version') };
+eval { $v .= pmver('Dist::Zilla::App::Command::xtest','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::ApacheTest','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::ApocalypseTests','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::AppendExternalData','any version') };
@@ -117,7 +128,6 @@ eval { $v .= pmver('Dist::Zilla::Plugin::GitHub::Update','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::GitObtain','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::GitVersionCheckCJM','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::GithubMeta','any version') };
-eval { $v .= pmver('Dist::Zilla::Plugin::GithubUpdate','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::HasVersionTests','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::Homepage','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::Inject','any version') };
@@ -213,7 +223,6 @@ eval { $v .= pmver('Dist::Zilla::Plugin::UnusedVarsTests','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::UpdateGitHub','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::VersionFromModule','any version') };
 eval { $v .= pmver('Dist::Zilla::Plugin::WSDL','any version') };
-eval { $v .= pmver('Dist::Zilla::Plugin::WSDL::Types','any version') };
 eval { $v .= pmver('Dist::Zilla::PluginBundle::AJGB','any version') };
 eval { $v .= pmver('Dist::Zilla::PluginBundle::AVAR','any version') };
 eval { $v .= pmver('Dist::Zilla::PluginBundle::Author::DOHERTY','any version') };

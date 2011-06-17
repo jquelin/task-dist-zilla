@@ -12,7 +12,7 @@ use warnings;
 
 package Task::Dist::Zilla;
 BEGIN {
-  $Task::Dist::Zilla::VERSION = '1.110760';
+  $Task::Dist::Zilla::VERSION = '1.111680';
 }
 # ABSTRACT: task to install dist-zilla and all its plugins
 
@@ -27,7 +27,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.110760
+version 1.111680
 
 =head1 SYNOPSIS
 
@@ -43,6 +43,30 @@ in one go.
 =head2 Base application
 
 =head3 L<Dist::Zilla>
+
+=head2 Commands
+
+=head3 L<Dist::Zilla::App::Command::configure_CSJEWELL>
+
+=head3 L<Dist::Zilla::App::Command::cover>
+
+=head3 L<Dist::Zilla::App::Command::debc>
+
+=head3 L<Dist::Zilla::App::Command::debi>
+
+=head3 L<Dist::Zilla::App::Command::debrelease>
+
+=head3 L<Dist::Zilla::App::Command::debuild>
+
+=head3 L<Dist::Zilla::App::Command::perltidy>
+
+=head3 L<Dist::Zilla::App::Command::podpreview>
+
+=head3 L<Dist::Zilla::App::Command::pot>
+
+=head3 L<Dist::Zilla::App::Command::weaverconf>
+
+=head3 L<Dist::Zilla::App::Command::xtest>
 
 =head2 Plugins
 
@@ -177,8 +201,6 @@ in one go.
 =head3 L<Dist::Zilla::Plugin::GitHub::Update>
 
 =head3 L<Dist::Zilla::Plugin::GithubMeta>
-
-=head3 L<Dist::Zilla::Plugin::GithubUpdate>
 
 =head3 L<Dist::Zilla::Plugin::GitObtain>
 
@@ -373,8 +395,6 @@ in one go.
 =head3 L<Dist::Zilla::Plugin::VersionFromModule>
 
 =head3 L<Dist::Zilla::Plugin::WSDL>
-
-=head3 L<Dist::Zilla::Plugin::WSDL::Types>
 
 =head2 Plugin bundles
 
