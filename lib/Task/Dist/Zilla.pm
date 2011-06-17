@@ -42,8 +42,6 @@ in one go.
 
 =pkg Dist::Zilla::App::Command::pot
 
-=pkg Dist::Zilla::App::Command::weaverconf
-
 =pkg Dist::Zilla::App::Command::xtest
 
 =pkgroup Plugins

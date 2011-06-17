@@ -16,6 +16,7 @@ $remove->add("$_\$") for @dzilv1;
 $remove->add("$_\$") for (
     'SanityTests', # deprecated
     'WSDL::Types', # deprecated
+    'Command::weaverconf', # https://rt.cpan.org/Ticket/Display.html?id=67379
 );
 
 # fetch available plugins/bundles
